@@ -40,9 +40,7 @@ public class Test {
         try {
             Object object = People.cloneObject(people);
             System.out.println(object);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
